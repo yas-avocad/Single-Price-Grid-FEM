@@ -167,7 +167,11 @@ Light-Cyan CONTAINER
   justify-content: center;
   min-height: 100svh;
  }
- 
+
+ .shadow {
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, .15);
+}
+
   main {
     display: flex;
     flex-direction: column;
