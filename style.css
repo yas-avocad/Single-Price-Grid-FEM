@@ -1,0 +1,249 @@
+:root {
+
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: Karla;
+  background-color: #E6EFF5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 72px 32px 62px 32px;
+
+}
+
+.shadow {
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, .15)
+  ;
+}
+
+/*************
+WHITE CONTAINER
+*************/
+
+.container {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 28px 24px 32px 24px;
+
+}
+
+p {
+  font-weight: bold;
+  letter-spacing: -.25px;
+  font-size: 1.25rem;
+  color: var(--Cyan);
+  margin-bottom: 24px; 
+}
+
+.guarantee {
+  color: var(--Bright-Yellow);
+  font-weight: bold;
+  letter-spacing: -.19px;
+  font-size: .9375rem;  
+  line-height: 20px;
+  margin-bottom: 16px;
+  min-width: 263px;
+  max-width: 263px;
+}
+
+.description {
+  color: var(--Grayish-Blue);
+  letter-spacing: -.17px;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 26px;
+  min-width: 263px;
+  max-width: 263px;
+  
+}
+
+/*************
+Dark-Cyan CONTAINER
+*************/
+
+.blue-containers {
+  background-color: var(--Cyan);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.container-2 {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.header {
+  color: white;
+  font-size: 1.125rem;
+  letter-spacing: -.22px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.price {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: -.4px;
+  font-weight: bold;
+}
+
+.price-month {
+  font-size: 1rem;
+  letter-spacing: -.2px;
+  vertical-align: center;
+  font-weight: 400;
+  color: rgba(250, 250, 250, .5);
+  margin-left: 11px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  letter-spacing: -.2px;
+  color: rgba(250, 250, 250, .9);
+  margin-bottom: 29px;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: var(--Bright-Yellow);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: -.2px;
+  padding: 15px 102px;
+  font-weight: bold;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, .0973);
+}
+
+/*************
+Light-Cyan CONTAINER
+*************/
+
+.container-3 {
+  background-color: rgba(250, 250, 250, .1519);
+  padding: 24px;
+}
+
+.text-white {
+  color: rgba(250, 250, 250, .75);
+}
+
+.text-white div {
+  margin-bottom: -4px;
+}
+
+@media (min-width: 760px) {
+ body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+ }
+ 
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 72px 32px 62px 32px;
+    overflow: hidden;
+  }
+  
+  .shadow {
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, .15);
+    max-width: 635px;
+
+  }
+  
+  /*************
+  WHITE CONTAINER
+  *************/
+ 
+  .container {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 40px;
+  }
+  
+  p {
+    letter-spacing: -.3px;
+    font-size: 1.5rem;
+  }
+  
+  .guarantee {
+    letter-spacing: -.22px;
+    font-size: 1.125rem;  
+    margin-bottom: 11px;
+    min-width: 367px;
+    max-width: 367px;
+  }
+  
+  .description {
+    letter-spacing: -.2px;
+    font-size: 1rem;
+    min-width: 545px;
+    max-width: 545px; 
+  }
+  
+  /*************
+  Dark-Cyan CONTAINER
+  *************/
+  
+  .blue-containers {
+    background-color: var(--Cyan);
+    display: grid;
+    grid-template-columns: 317px 1fr;
+
+  }
+  .container-2 {
+    padding: 40px;
+
+  }
+  
+  button {
+    padding: 15px 89px;
+  }
+  
+  /*************
+  Light-Cyan CONTAINER
+  *************/
+  
+  .container-3 {
+    background-color: rgba(250, 250, 250, .1519);
+    padding: 40px;
+  }
+  
+  .text-white div {
+    margin-bottom: -6px;
+    font-size: .875rem;
+  }
+}
